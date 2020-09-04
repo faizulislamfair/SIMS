@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <br>
-      <a style="float:right;" class="btn btn-primary" href="#">Login</a>
+      <a style="float:right;" class="btn btn-primary" href="admin/login.php">Login</a>
       <br> <br>
       <h1 class="text-center">Student Information & Management System</h1>
     <br> <br>
