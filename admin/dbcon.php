@@ -1,6 +1,6 @@
 <?php
 
- $linnk = mysqli_connect("localhost", "root", "", "mini_project");
+ $link = mysqli_connect("localhost", "root", "", "mini_project");
 
  
 ?>
