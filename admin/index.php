@@ -50,7 +50,7 @@ if(!isset($_SESSION['user_login'])){
 									<div class="container-fluid">
 										<!-- Brand and toggle get grouped for better mobile display -->
 										<div class="navbar-header">
-											<a class="navbar-brand" href="index.php">SIMS</a>
+											<a class="navbar-brand" href="index.php">Student Information & Management System</a>
 										</div>
 										<!-- Collect the nav links, forms, and other content for toggling -->
 										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -191,6 +191,54 @@ if(!isset($_SESSION['user_login'])){
 														</div>
 													</div>
 												</div>
+
+                                               <hr>
+
+											   <h3>New Students</h3>
+
+											   <div class="table-responsive">
+
+											   <table class="table table-hover table-bordered table-striped">
+											      <thead>
+												     <tr>
+													 <th>ID</th>
+													 <th>Name</th>
+													 <th>Roll</th>
+													 <th>City</th>
+													 <th>Contact</th>
+													 <th>Photo</th>
+													 </tr>
+												  </thead>
+												  <tbody>
+												    <tr>
+												       <td>1</td>
+													   <td>Faizul Islam</td>
+													   <td>1810021</td>
+													   <td>Rajshahi</td>
+													   <td>01715577668</td>
+													   <td><img style="width: 100px;" src="images/faizulece18.jpg" alt=""></td>
+												    </tr>
+													<tr>
+												       <td>1</td>
+													   <td>Faizul Islam</td>
+													   <td>1810021</td>
+													   <td>Rajshahi</td>
+													   <td>01715577668</td>
+													   <td><img style="width: 100px;" src="images/faizulece18.jpg" alt=""></td>
+												    </tr>
+													<tr>
+												       <td>1</td>
+													   <td>Faizul Islam</td>
+													   <td>1810021</td>
+													   <td>Rajshahi</td>
+													   <td>01715577668</td>
+													   <td><img style="width: 100px;" src="images/faizulece18.jpg" alt=""></td>
+												    </tr>
+												  </tbody>
+											   </table>
+
+											  </div>
+
 											</div>
 										</div>
 									</div>
@@ -199,7 +247,7 @@ if(!isset($_SESSION['user_login'])){
 
 								<footer class="footer-area">
 									<p>Copyright &COPY; 2020 Student Information & Management System. All Rights Are Reserved.</p>
-                </footer>
+                               </footer>
 
 
 							</body>
