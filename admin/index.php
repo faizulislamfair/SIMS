@@ -18,30 +18,20 @@ if(!isset($_SESSION['user_login'])){
           <!-- Bootstrap -->
           
 					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="../css/style.css">
-						<link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
-						
-			    <style>
-
-					.content {
-                    min-height: 500px;
-                    }
-
-                    .footer-area {
-                    background: #3CA9E8;
-                    text-align: center;
-                    padding: 20px 0;
-                    color: #fff;
-                    }
-
-                    .footer-area p {
-                    margin: 0;
-					}
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+					<link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+					<link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
+                    <link rel="stylesheet" href="../css/style.css">
 					
 
-				</style>
+                    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+					<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+					<script type="text/javascript" src="../js/dataTables.bootstrap4.min.js"></script>
+					<script type="text/javascript" src="../js/script.js"></script>
+
+
+			    
 						
               </head>
               
@@ -198,7 +188,7 @@ if(!isset($_SESSION['user_login'])){
 
 											   <div class="table-responsive">
 
-											   <table class="table table-hover table-bordered table-striped">
+											   <table id="data" class="table table-hover table-bordered table-striped">
 											      <thead>
 												     <tr>
 													 <th>ID</th>
@@ -243,7 +233,8 @@ if(!isset($_SESSION['user_login'])){
 										</div>
 									</div>
 								</div>
-
+                                 
+                                <br><br><br><br><br>
 
 								<footer class="footer-area">
 									<p>Copyright &COPY; 2020 Student Information & Management System. All Rights Are Reserved.</p>
