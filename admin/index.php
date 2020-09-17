@@ -111,7 +111,7 @@ if(!isset($_SESSION['user_login'])){
 												if(file_exists($page)){
 													require_once $page;
 												} else {
-													echo '<h1>File Not Found</h1>';
+													require_once '404.php';
 												}
 												   
 
