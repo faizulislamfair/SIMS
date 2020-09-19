@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require_once './dbcon.php';
 if(!isset($_SESSION['user_login'])){
      header('location: login.php');
 }
