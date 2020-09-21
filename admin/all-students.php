@@ -41,7 +41,7 @@
 				<td>
 				   <a href="" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i> Edit</a>
 				   &nbsp;&nbsp;&nbsp;&nbsp;
-				   <a href=""  class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
+				   <a href="delete_student.php?id=<?php echo base64_encode($row['id']); ?>"  class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
 				</td>
 			</tr>
 
