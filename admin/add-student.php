@@ -1,6 +1,6 @@
 <h1 class="text-primary"><i class="fa fa-user-plus"></i> Add Student <small> Add New Student</small></h1>
 <ol class="breadcrumb">
-   <li><a href="index.php?page=dashboard">Dashboard</a></li>
+   <li><a href="index.php?page=dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
    <li class="active"><i class="fa fa-user-plus"></i> Add Student</li>
 </ol>
 
