@@ -56,7 +56,7 @@ if(!isset($_SESSION['user_login'])){
 													</a>
 												</li>
 												<li>
-													<a href="logout.php">
+													<a href="index.php?page=user-profile">
 														<i class="fa fa-user"></i> Profile
 													</a>
 												</li>
