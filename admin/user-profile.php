@@ -48,7 +48,25 @@ $user_row = mysqli_fetch_assoc($user_data);
       <img style="width:200px; height=250px;" class="img-thumbnail img-sm" src="images/<?= $user_row['photo'] ?>" alt="Thumbnail">
     </a>
     <br> <br>
-    <form action="">
+
+<?php
+
+if(isset($_POST['upload'])) {
+  $photo = explode('.', $_FILES['photo']['name']);
+  $photo = end($photo);
+  $photo_name = $session_user.'.'.$photo;
+
+  $upload = mysqli_query($link, "UPDATE `users` SET `photo`='$photo_name' WHERE `username` = '$session_user'");
+  if($upload){
+    move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo_name);
+  }
+}
+
+
+?>
+
+
+    <form action="" enctype="multipart/form-data" method="POST">
       <label for="photo">Profile Picture</label>
       <input type="file" name="photo" required="" id="photo">
       <br>
