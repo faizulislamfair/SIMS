@@ -51,7 +51,7 @@ if(!isset($_SESSION['user_login'])){
 													</a>
 												</li>
 												<li>
-													<a href="logout.php">
+													<a href="registration.php">
 														<i class="fa fa-user-plus"></i> Add User
 													</a>
 												</li>
