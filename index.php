@@ -48,6 +48,50 @@
       </div>
     </div>
 
+   <?php
+
+    if(isset($_POST['show_info'])) {
+
+      ?>
+
+<div class="row">
+      <div class="col-sm-8 col-sm offset-2">
+        <table class="table table-bordered">
+          <tr>
+            <td rowspan="4">
+              <img src="admin/student_images/1810021.jpg"
+              class="img-thumbnail" style="width: 150px;"
+               alt="Student's Image">
+            </td>
+            <td>Name</td>
+            <td>S.M.Faizul Islam Fair</td>
+          </tr>
+          <tr>
+            
+            <td>Roll</td>
+            <td>1810021</td>
+          </tr>
+          <tr>
+            
+            <td>Class</td>
+            <td>2nd</td>
+          </tr>
+          <tr>
+            
+            <td>City</td>
+            <td>Rajshahi</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <?php
+    }
+
+    ?>
+
+    
+
     </div>
 
     <!-- Optional JavaScript -->
