@@ -28,10 +28,10 @@
               <td>
                 <select class="form-control" id="choose" name="choose">
                   <option value="">Select</option>
-                  <option value="1">1st Year</option>
-                  <option value="2">2nd Year</option>
-                  <option value="3">3rd Year</option>
-                  <option value="4">4th Year</option>
+                  <option value="1st">1st Year</option>
+                  <option value="2nd">2nd Year</option>
+                  <option value="3rd">3rd Year</option>
+                  <option value="4th">4th Year</option>
                 </select>
               </td>
             </tr>
@@ -49,46 +49,63 @@
     </div>
 
    <?php
+     
+     require_once './admin/dbcon.php';
 
     if(isset($_POST['show_info'])) {
 
-      ?>
+      $choose = $_POST['choose'];
+      $roll = $_POST['roll'];
+
+      $result = mysqli_query($link, "SELECT * FROM `student_info` WHERE `class` = '$choose' and `roll` = '$roll'");
+
+      if(mysqli_num_rows($result) == 1){
+        $row = mysqli_fetch_assoc($result);
+        ?>
 
 <div class="row">
-      <div class="col-sm-8 col-sm offset-2">
+      <div class="col-sm-6 col-sm offset-3">
         <table class="table table-bordered">
           <tr>
             <td rowspan="4">
-              <img src="admin/student_images/1810021.jpg"
+              <img src="admin/student_images/<?= $row['photo'] ?>"
               class="img-thumbnail" style="width: 150px;"
                alt="Student's Image">
             </td>
             <td>Name</td>
-            <td>S.M.Faizul Islam Fair</td>
+            <td><?= ucwords($row['name']); ?></td>
           </tr>
           <tr>
             
             <td>Roll</td>
-            <td>1810021</td>
+            <td><?= $row['roll'] ?></td>
           </tr>
           <tr>
             
             <td>Class</td>
-            <td>2nd</td>
+            <td><?= $row['class'] ?></td>
           </tr>
           <tr>
             
             <td>City</td>
-            <td>Rajshahi</td>
+            <td><?= ucwords($row['city']); ?></td>
           </tr>
         </table>
       </div>
     </div>
 
-      <?php
-    }
 
-    ?>
+     <?php
+
+      } else {
+
+        ?>
+
+        <script type="text/javascript">
+          alert('Data Not Found');
+        </script>
+
+      <?php }} ?>
 
     
 
