@@ -46,8 +46,8 @@ if(!isset($_SESSION['user_login'])){
 										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 											<ul class="nav navbar-nav navbar-right">
 												<li>
-													<a href="logout.php">
-														<i class="fa fa-user"></i> Welcome: Faizul Islam
+													<a href="">
+														<i class="fa fa-user"></i> Welcome User
 													</a>
 												</li>
 												<li>
@@ -76,7 +76,7 @@ if(!isset($_SESSION['user_login'])){
 
 										<div class="col-sm-3">
 											<div class="list-group">
-												<a href="index.php?page=dashboard" class="list-group-item active">
+												<a href="index.php?page=dashboard" class="list-group-item">
 													<i class="fas fa-tachometer-alt"></i> Dashboard
 												</a>
 												<a href="index.php?page=add-student" class="list-group-item">
