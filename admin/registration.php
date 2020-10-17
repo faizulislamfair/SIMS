@@ -104,20 +104,20 @@
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
 
-
-
     <title>User Registration Form</title>
   </head>
   <body>
+  <header style="width:100%; height:100px; background:#3CA9E8;">
+   </header>
   <br>
      <div class="container">
-        <h1>User Registration Form</h1>
+        <h1 style="text-align:center;">User Registration Form</h1>
         <?php if(isset($_SESSION['data_insert_success'])){ echo '<div class="alert alert-success">'.$_SESSION['data_insert_success'].'</div>';} ?>
         <?php if(isset($_SESSION['data_insert_error'])){ echo '<div class="alert alert-warning">'.$_SESSION['data_insert_error'].'</div>';} ?>
 
      <hr>
      <div class="row">
-       <div class="col-md-12">
+       <div class="col-md-12 offset-4">
          <form action="" method="POST" enctype="multipart/form-data" class="form-horizontal">
           <div class="form-group">
             <label for="name" class="control-label col-sm-1">Name</label>
@@ -179,17 +179,17 @@
           </div>
           <br>
           <div class="col-sm-4 col-sm offset-1">
-           <input type="submit" value="Registration" name="registration" class="btn btn-primary">
+           <input style="background:#3CA9E8;" type="submit" value="Registration" name="registration" class="btn btn-primary">
           </div>
          </form>
        </div>
      </div>
      <br> <br>
-     <p>If you have an account? then please <a href="login.php">Login</a></p>
+     <h6 style="text-align:center;">If you have an account? then please <a href="login.php">Login</a></h6>
      <hr>
-     <footer>
-      <p>Copyright &copy; <?= date('Y') ?> All Rights Reserved </p>
-     </footer>
      </div>
+     <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center;">
+        <h5 style="padding-top:25px;">Copyright &copy; <?= date('Y') ?> All Rights Reserved</h5> 
+     </footer>
   </body>
 </html>
