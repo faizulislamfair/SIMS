@@ -10,11 +10,17 @@
     <title>SIMS</title>
   </head>
   <body>
+
+  <header style="width:100%; height:100px; background:#3CA9E8;">
+   </header>
+
     <div class="container">
       <br>
+      
       <a style="float:right;" class="btn btn-primary" href="admin/login.php">Login</a>
       <br> <br>
       <h1 class="text-center">Student Information & Management System</h1>
+      
     <br> <br>
     <div class="row text-center">
       <div class="col-sm-4 col-sm offset-4">
@@ -110,6 +116,10 @@
     
 
     </div>
+
+    <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:21px">
+        <h5 style="padding-top:25px;">Copyright &copy; <?= date('Y') ?> All Rights Reserved</h5> 
+     </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

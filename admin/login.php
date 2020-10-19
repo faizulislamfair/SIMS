@@ -53,6 +53,9 @@ if(isset($_POST['login'])) {
     <title>SIMS</title>
   </head>
   <body>
+
+  <header style="width:100%; height:100px; background:#3CA9E8;">
+   </header>
   
    <div class="container animated shake">
      <br> <br>
@@ -60,6 +63,7 @@ if(isset($_POST['login'])) {
 
      <div class="row">
       <div class="col-sm-4 col-sm offset-4">
+      <div>
       <h2 class="text-center">Admin Login Form</h2>
       <br> <br>
          <form action="login.php" method="POST">
@@ -72,9 +76,11 @@ if(isset($_POST['login'])) {
            </div>
            <br>
            <div>
-           <input style="float:right;" type="submit" value="Login" name="login" class="btn btn-info pull-right">
-           </div><a href="../">Back</a>
+           <input style="float:right; width:75px; height:40px;" type="submit" value="Login" name="login" class="btn btn-info pull-right">
+           <a href="../"><input style="width:75px; height:40px;" value="Back" class="btn btn-info pull-left"></a>
+           </div>
          </form>
+         </div>
       </div>
      </div>
      <br>
@@ -83,6 +89,10 @@ if(isset($_POST['login'])) {
      <?php if(isset($status_inactive)) { echo '<div class="alert alert-danger col-sm-4 col-sm offset-4">'.$status_inactive.'</div>'; } ?>
 
    </div>
+
+   <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:49px;">
+        <h5 style="padding-top:25px;">Copyright &copy; <?= date('Y') ?> All Rights Reserved</h5> 
+     </footer>
 
   </body>
 </html>
