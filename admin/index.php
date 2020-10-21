@@ -74,7 +74,7 @@ if(!isset($_SESSION['user_login'])){
 
 									<div class="row">
 
-										<div class="col-sm-3">
+										<div style="margin-top:70px;" class="col-sm-3">
 											<div class="list-group">
 												<a href="index.php?page=dashboard" class="list-group-item">
 													<i class="fas fa-tachometer-alt"></i> Dashboard
