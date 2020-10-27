@@ -118,7 +118,7 @@
     </div>
 
     <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:21px">
-        <h5 style="padding-top:25px;">Copyright &copy; <?= date('Y') ?> All Rights Reserved</h5> 
+        <h6 style="padding-top:25px; color: white;">Copyright &COPY; 2020 Student Information & Management System. All Rights Are Reserved.</h6> 
      </footer>
 
     <!-- Optional JavaScript -->

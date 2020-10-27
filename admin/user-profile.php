@@ -41,7 +41,7 @@ $user_row = mysqli_fetch_assoc($user_data);
         <td><?= $user_row['datetime']; ?></td>
       </tr>
     </table>
-    <a href="" class="btn btn-sm btn-info pull-right">Edit Profile</a>
+    <a href="index.php?page=update-user&id=<?php echo base64_encode($row['id']); ?>" class="btn btn-sm btn-info pull-right">Edit Profile</a>
   </div>
   <div class="col-sm-6">
     <a href="">
