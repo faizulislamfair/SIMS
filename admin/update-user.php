@@ -8,7 +8,7 @@
 <?php
 
 $id = base64_decode($_GET['id']);
-$db_data = mysqli_query($link, "SELECT * FROM `users` WHERE `id` = '$id'");
+$db_data = mysqli_query($link, "SELECT * FROM users WHERE `id` = $id");
 $db_row = mysqli_fetch_assoc($db_data);
 
 
