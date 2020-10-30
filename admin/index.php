@@ -88,6 +88,9 @@ if(!isset($_SESSION['user_login'])){
 												<a href="index.php?page=all-users" class="list-group-item">
 													<i class="fa fa-users"></i> All Users
 												</a>
+												<a href="index.php?page=academic" class="list-group-item">
+												<i class="fas fa-user-graduate"></i> Academic Performance
+												</a>
 											</div>
 										</div>
 
