@@ -11,27 +11,27 @@
 <div class="card" style="width: 18rem;">
   <img style="width:200px; height:200px;" src="images/class_test.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Class Test</h5>
+    <h3 class="card-title" style="text-align: center;">Class Test</h3>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Class Test</a>
+    <a href="class-test.php" class="btn btn-primary">Class Test</a>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
   <img style="width:200px; height:200px;" src="images/semester_final.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Semester Final</h5>
+    <h3 class="card-title" style="text-align: center;">Semester Final</h3>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Semester Final</a>
+    <a href="semester-final.php" class="btn btn-primary">Semester Final</a>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
   <img style="width:200px; height:200px;" src="images/attendance.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Attendance</h5>
+    <h3 class="card-title" style="text-align: center;">Attendance</h3>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Attendance</a>
+    <a href="attendance.php" class="btn btn-primary">Attendance</a>
   </div>
 </div>
 
