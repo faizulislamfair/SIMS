@@ -179,7 +179,7 @@
           </div>
           <br>
           <div class="col-sm-4 col-sm offset-1">
-           <input style="background:#3CA9E8;" type="submit" value="Registration" name="registration" class="btn btn-primary">
+           <input style="background:#3CA9E8;" type="submit" value="Register" name="registration" class="btn btn-primary">
           </div>
          </form>
        </div>

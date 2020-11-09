@@ -64,7 +64,7 @@ if(isset($_POST['login'])) {
      <div class="row">
       <div class="col-sm-4 col-sm offset-4">
       <div>
-      <h2 class="text-center">Admin Login Panel</h2>
+      <h2 class="text-center">Teacher Login Panel</h2>
       <br> <br>
          <form action="login.php" method="POST">
            <div>
