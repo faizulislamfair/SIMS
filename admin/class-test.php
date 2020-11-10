@@ -46,59 +46,59 @@
   <tbody>
     <tr>
       <th scope="row">1810008</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810009</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810014</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810020</th>
-      <td</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810021</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810022</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
     <tr>
       <th scope="row">1810040</th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
     </tr>
   </tbody>
 </table>
