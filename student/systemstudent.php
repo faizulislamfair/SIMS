@@ -1,3 +1,15 @@
+<?php
+session_start();
+require_once './dbcon.php';
+if(!isset($_SESSION['student_login'])){
+     header('location: login.php');
+}
+
+
+?>
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
