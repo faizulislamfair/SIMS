@@ -4,24 +4,24 @@ require_once './dbcon.php';
 
 session_start();
 
-if(isset($_SESSION['user_login'])){
-  header('location: index.php');
+if(isset($_SESSION['student_login'])){
+  header('location: systemstudent.php');
 }
 
 if(isset($_POST['login'])) {
       
-  $username = $_POST['username'];
+  $studentname = $_POST['studentname'];
   $password = $_POST['password'];
 
 
-  $username_check = mysqli_query($link, "SELECT * FROM `users` WHERE `username` = '$username'");
-  if(mysqli_num_rows($username_check) > 0){
-   $row = mysqli_fetch_assoc($username_check);
+  $studentname_check = mysqli_query($link, "SELECT * FROM `student` WHERE `studentname` = '$studentname'");
+  if(mysqli_num_rows($studentname_check) > 0){
+   $row = mysqli_fetch_assoc($studentname_check);
 
    if($row['password'] == md5($password)){
     if($row['status'] == 'active'){
-      $_SESSION['user_login'] = $username;
-      header('location: index.php');
+      $_SESSION['student_login'] = $studentname;
+      header('location: systemstudent.php');
     } else {
       $status_inactive = "Your Status Is Inactive";
     }
@@ -68,7 +68,7 @@ if(isset($_POST['login'])) {
       <br> <br>
          <form action="login.php" method="POST">
            <div>
-              <input type="text" placeholder="Username" name="username" required="" class="form-control" value="<?php if(isset($username)) { echo $username; } ?>">
+              <input type="text" placeholder="Student's Name" name="studentname" required="" class="form-control" value="<?php if(isset($studentname)) { echo $studentname; } ?>">
            </div>
            <br>
            <div>

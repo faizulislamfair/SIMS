@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>SIMS</title>
   </head>
   <body>
@@ -17,7 +17,7 @@
     <div class="container">
       <br>
       
-      <a style="float:right;" class="btn btn-primary" href="admin/login.php">Login</a>
+      <a style="float:right;" class="btn btn-primary" href="logout.php">Logout</a>
       <br> <br>
       <h1 class="text-center">Student Information & Management System</h1>
       
@@ -56,7 +56,7 @@
 
    <?php
      
-     require_once './admin/dbcon.php';
+     require_once 'dbcon.php';
 
     if(isset($_POST['show_info'])) {
 
@@ -74,7 +74,7 @@
         <table class="table table-bordered">
           <tr>
             <td rowspan="4">
-              <img src="admin/student_images/<?= $row['photo'] ?>"
+              <img src="../admin/student_images/<?= $row['photo'] ?>"
               class="img-thumbnail" style="width: 150px;"
                alt="Student's Image">
             </td>

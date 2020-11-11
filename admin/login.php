@@ -5,7 +5,7 @@ require_once './dbcon.php';
 session_start();
 
 if(isset($_SESSION['user_login'])){
-  header('location: index.php');
+  header('location: systemoredit.php');
 }
 
 if(isset($_POST['login'])) {
@@ -21,7 +21,7 @@ if(isset($_POST['login'])) {
    if($row['password'] == md5($password)){
     if($row['status'] == 'active'){
       $_SESSION['user_login'] = $username;
-      header('location: index.php');
+      header('location: systemoredit.php');
     } else {
       $status_inactive = "Your Status Is Inactive";
     }

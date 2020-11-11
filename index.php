@@ -26,7 +26,7 @@
         <h4 class="card-title offset-4">Panel</h4> 
         <br>
         <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-        <a href="http://localhost/Stu_Info_Man_System/teacher/login.php" class="btn btn-primary offset-3">View Page</a>
+        <a href="teacher/login.php" class="btn btn-primary offset-3">View Page</a>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
         <h4 class="card-title offset-4">Panel</h4> 
         <br>
         <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-        <a href="http://localhost/Stu_Info_Man_System/admin/login.php" class="btn btn-primary offset-3">View Page</a>
+        <a href="admin/login.php" class="btn btn-primary offset-3">View Page</a>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
         <h4 class="card-title offset-4">Panel</h4> 
         <br>
         <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-        <a href="http://localhost/Stu_Info_Man_System/student/login.php" class="btn btn-primary offset-3">View Page</a>
+        <a href="student/login.php" class="btn btn-primary offset-3">View Page</a>
       </div>
     </div>
   </div>

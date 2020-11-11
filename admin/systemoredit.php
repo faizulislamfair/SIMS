@@ -1,3 +1,14 @@
+<?php
+session_start();
+require_once './dbcon.php';
+if(!isset($_SESSION['user_login'])){
+     header('location: login.php');
+}
+
+
+?>
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -25,7 +36,7 @@
         <h4 class="card-title offset-3">View System</h4> 
         <br>
         <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-        <a href="../system.php" style="width:100px;" class="btn btn-primary offset-4">View</a>
+        <a href="systemadmin.php" style="width:100px;" class="btn btn-primary offset-4">View</a>
       </div>
     </div>
   </div>
