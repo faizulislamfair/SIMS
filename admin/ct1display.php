@@ -77,7 +77,6 @@ if(!isset($_SESSION['user_login'])){
     <td><img style="width: 100px;" src="student_images/<?php echo $row['photo']; ?>" alt="Student's Image"></td>
     <td>
        <a href="index.php?page=update-student&id=<?php echo base64_encode($row['id']); ?>" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i> Edit</a>
-       <a href="delete_student.php?id=<?php echo base64_encode($row['id']); ?>"  class="btn btn-xs btn-danger"><i class="fa fa-trash"></i> Delete</a>
     </td>
   </tr>
 
