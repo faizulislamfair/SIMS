@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 require_once './dbcon.php';
@@ -47,14 +49,13 @@ if(!isset($_SESSION['user_login'])){
   <thead>
 
   <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Roll</th>
-    <th>Class</th>
-    <th>City</th>
-    <th>Contact</th>
-    <th>Photo</th>
-      <th>Action</th>
+    <th>Roll No.</th>
+    <th>Electrical Machines</th>
+    <th>Data Structure & Algorithms</th>
+    <th>Digital Techniques</th>
+    <th>Mathematics</th>
+    <th>Chemistry</th>
+    <th>Action</th>
   </tr>
 
 </thead>
@@ -62,21 +63,20 @@ if(!isset($_SESSION['user_login'])){
 <tbody>
 
 <?php
-    $db_sinfo = mysqli_query($link, "SELECT * FROM `student_info` ");
-  while($row = mysqli_fetch_assoc($db_sinfo)){ 
+    $db_sinfos = mysqli_query($link, "SELECT * FROM `student_marks1` ");
+  while($row = mysqli_fetch_assoc($db_sinfos)){ 
 ?>
                       
 
   <tr>
-    <td><?php echo $row['id']; ?></td>
-    <td><?php echo ucwords($row['name']); ?></td>
-    <td><?php echo $row['roll']; ?></td>
-    <td><?php echo $row['class']; ?></td>
-      <td><?php echo ucwords($row['city']); ?></td>
-    <td><?php echo $row['pcontact']; ?></td>
-    <td><img style="width: 100px;" src="student_images/<?php echo $row['photo']; ?>" alt="Student's Image"></td>
+    <td><?php echo $row['Roll']; ?></td>
+    <td><?php echo $row['Electrical_Machines']; ?></td>
+    <td><?php echo $row['Data_Structure_&_Algorithms']; ?></td>
+    <td><?php echo $row['Digital_Techniques']; ?></td>
+      <td><?php echo $row['Mathematics']; ?></td>
+    <td><?php echo $row['Chemistry']; ?></td>
     <td>
-       <a href="index.php?page=update-student&id=<?php echo base64_encode($row['id']); ?>" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i> Edit</a>
+       <a href="ct1update.php?page=update-student&Roll=<?php echo base64_encode($row['Roll']); ?>" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i> Edit</a>
     </td>
   </tr>
 
@@ -95,7 +95,7 @@ if(!isset($_SESSION['user_login'])){
 
 
   
-   <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:49px; position:absolute;">
+   <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:49px; position:absolute; bottom:0;">
         <h6 style="padding-top:25px; color: white;">Copyright &COPY; 2020 Student Information & Management System. All Rights Are Reserved.</h6> 
      </footer>
 </body>
