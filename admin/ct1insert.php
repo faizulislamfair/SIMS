@@ -56,7 +56,8 @@ if(isset($_POST['ct1insert'])){
   $result = mysqli_query($link, $query);
 
   if($result){
-   $success = "Data Insertion Successful!"; 
+   $success = "Data Insertion Successful!";
+   header('location: ct1insert.php'); 
   } else {
     $error = "Wrong!";
   }

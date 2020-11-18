@@ -8,8 +8,7 @@
 <?php
 
 $id = base64_decode($_GET['id']);
-$db_data = mysqli_query($link, "SELECT * FROM users WHERE `id` = $id");
-$db_row = mysqli_fetch_assoc($db_data);
+
 
 
 if(isset($_POST['update-user'])){
@@ -23,10 +22,13 @@ if(isset($_POST['update-user'])){
   $result = mysqli_query($link, $query);
 
   if($result){
-    header('location: index.php?page=user-profile');
+    //header('location: index.php?page=user-profile');
   }
 
 }
+
+$db_data = mysqli_query($link, "SELECT * FROM users WHERE `id` = $id");
+$db_row = mysqli_fetch_assoc($db_data);
 
 
 ?>

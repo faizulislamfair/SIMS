@@ -52,13 +52,13 @@ if(isset($_POST['ct1update'])){
     $math = $_POST['Mathematics'];
     $chem = $_POST['Chemistry'];
 
-    $query = "INSERT INTO `student_marks1`(`Roll`, `Electrical_Machines`, `Data_Structure_&_Algorithms`, `Digital_Techniques`, `Mathematics`, `Chemistry`) VALUES ('$roll', '$elec', '$data', '$tech', '$math', '$chem')";
+    $query = "UPDATE `student_marks1` SET `Electrical_Machines`= '$elec' ,`Data_Structure_&_Algorithms`= '$data' ,`Digital_Techniques`= '$tech'  ,`Mathematics`= '$math'  ,`Chemistry`= '$chem'  WHERE `Roll` = '$roll'";
 
     $result = mysqli_query($link, $query);
   
 
   if($result){
-    header('location: ct1display');
+    header('location: ct1display.php');
   }
 
 }

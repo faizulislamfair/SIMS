@@ -8,8 +8,7 @@
 <?php
 
 $id = base64_decode($_GET['id']);
-$db_data = mysqli_query($link, "SELECT * FROM `student_info` WHERE `id` = '$id'");
-$db_row = mysqli_fetch_assoc($db_data);
+
 
 
 if(isset($_POST['update-student'])){
@@ -24,10 +23,19 @@ if(isset($_POST['update-student'])){
   $result = mysqli_query($link, $query);
 
   if($result){
-    header('location: index.php?page=all-students');
+    //header('location: index.php?page=all-students');
   }
 
+  
+
 }
+
+
+$db_data = mysqli_query($link, "SELECT * FROM `student_info` WHERE `id` = '$id'");
+$db_row = mysqli_fetch_assoc($db_data);
+
+
+
 
 
 ?>
