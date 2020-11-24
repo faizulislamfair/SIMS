@@ -10,17 +10,17 @@ if(isset($_SESSION['student_login'])){
 
 if(isset($_POST['login'])) {
       
-  $studentname = $_POST['studentname'];
+  $Roll = $_POST['Roll'];
   $password = $_POST['password'];
 
 
-  $studentname_check = mysqli_query($link, "SELECT * FROM `student` WHERE `studentname` = '$studentname'");
+  $studentname_check = mysqli_query($link, "SELECT * FROM `student` WHERE `Roll` = '$Roll'");
   if(mysqli_num_rows($studentname_check) > 0){
    $row = mysqli_fetch_assoc($studentname_check);
 
    if($row['password'] == md5($password)){
     if($row['status'] == 'active'){
-      $_SESSION['student_login'] = $studentname;
+      $_SESSION['student_login'] = $Roll;
       header('location: systemstudent.php');
     } else {
       $status_inactive = "Your Status Is Inactive";
@@ -31,7 +31,7 @@ if(isset($_POST['login'])) {
 
 
   } else {
-       $username_not_found = "This Username Is Not Found";
+       $roll_not_found = "This Roll Number Is Not Found";
   }
 
 
@@ -68,7 +68,7 @@ if(isset($_POST['login'])) {
       <br> <br>
          <form action="login.php" method="POST">
            <div>
-              <input type="text" placeholder="Student's Name" name="studentname" required="" class="form-control" value="<?php if(isset($studentname)) { echo $studentname; } ?>">
+              <input type="text" placeholder="Roll Number" name="Roll" required="" class="form-control" value="<?php if(isset($Roll)) { echo $Roll; } ?>">
            </div>
            <br>
            <div>
@@ -84,7 +84,7 @@ if(isset($_POST['login'])) {
       </div>
      </div>
      <br>
-     <?php if(isset($username_not_found)) { echo '<div class="alert alert-danger col-sm-4 col-sm offset-4">'.$username_not_found.'</div>'; } ?>
+     <?php if(isset($roll_not_found)) { echo '<div class="alert alert-danger col-sm-4 col-sm offset-4">'.roll_not_found.'</div>'; } ?>
      <?php if(isset($wrong_password)) { echo '<div class="alert alert-danger col-sm-4 col-sm offset-4">'.$wrong_password.'</div>'; } ?>
      <?php if(isset($status_inactive)) { echo '<div class="alert alert-danger col-sm-4 col-sm offset-4">'.$status_inactive.'</div>'; } ?>
 

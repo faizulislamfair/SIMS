@@ -29,7 +29,7 @@
             <tr>
               <td colspan="2"><label>Student Information</label></td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td><label for="choose">Choose Year</label></td>
               <td>
                 <select class="form-control" id="choose" name="choose">
@@ -40,7 +40,7 @@
                   <option value="4th">4th Year</option>
                 </select>
               </td>
-            </tr>
+            </tr> -->
             <tr>
               <td><label for="roll">Roll</label></td>
               <td><input class="form-control" type="text" name="roll" pattern="[0-9]{7}" placeholder="Roll"></td>
@@ -60,10 +60,10 @@
 
     if(isset($_POST['show_info'])) {
 
-      $choose = $_POST['choose'];
+      //$choose = $_POST['choose'];
       $roll = $_POST['roll'];
 
-      $result = mysqli_query($link, "SELECT * FROM `student_info` WHERE `class` = '$choose' and `roll` = '$roll'");
+      $result = mysqli_query($link, "SELECT * FROM `student_info` WHERE `roll` = '$roll'");
 
       if(mysqli_num_rows($result) == 1){
         $row = mysqli_fetch_assoc($result);
@@ -175,13 +175,13 @@ foreach($rows as $row){
  
 }
 
-foreach($rows as $row){
+//foreach($rows as $row){
 
 
 ?>
 
 
-    <br> <br>
+    <!-- <br> <br>
     <div class="row text-center">
       <div class="col-sm-4 col-sm offset-4">
         <form action="" method="post">
@@ -200,15 +200,15 @@ foreach($rows as $row){
         </form>
 
       </div>
-    </div>
+    </div> -->
 
    <?php
      
      require_once 'dbcon.php';
 
-    if(isset($_POST['shows_info'])) {
+    if(isset($_POST['show_info'])) {
 
-      $Roll = $_POST['Roll'];
+      $Roll = $_POST['roll'];
 
       $results = mysqli_query($link, "SELECT * FROM `student_marks1` WHERE `Roll` = '$Roll'");
 
@@ -276,7 +276,7 @@ foreach($rows as $row){
           alert('Data Not Found');
         </script>
 
-      <?php }} ?>
+      <?php } ?>
 
     </div>
 
