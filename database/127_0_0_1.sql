@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2020 at 07:31 PM
+-- Generation Time: Nov 25, 2020 at 01:48 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -22,6 +22,32 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `student_project` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `student_project`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+CREATE TABLE `student` (
+  `id` int(5) NOT NULL,
+  `Roll` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `studentname` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `photo` varchar(50) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `datetime` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`id`, `Roll`, `name`, `email`, `studentname`, `password`, `photo`, `status`, `datetime`) VALUES
+(1, 1810021, 'S.M. Faizul Islam Fair', 'faizul@gmail.com', 'faizulece18', 'f638f4354ff089323d1a5f78fd8f63ca', '', 'active', '2020-11-11 15:55:04'),
+(2, 1810022, 'Md. Shahriar Sajid', 'sajid@gmail.com', 'sajid', '30220cfd902d347400efcfef5ca9d655', '', 'active', '2020-11-24 13:26:48');
 
 -- --------------------------------------------------------
 
@@ -57,6 +83,130 @@ INSERT INTO `student_info` (`id`, `name`, `roll`, `class`, `city`, `pcontact`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `student_marks1`
+--
+
+CREATE TABLE `student_marks1` (
+  `Roll` int(11) NOT NULL,
+  `Electrical_Machines` int(11) NOT NULL,
+  `Data_Structure_&_Algorithms` int(11) NOT NULL,
+  `Digital_Techniques` int(11) NOT NULL,
+  `Mathematics` int(11) NOT NULL,
+  `Chemistry` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_marks1`
+--
+
+INSERT INTO `student_marks1` (`Roll`, `Electrical_Machines`, `Data_Structure_&_Algorithms`, `Digital_Techniques`, `Mathematics`, `Chemistry`) VALUES
+(1810016, 10, 12, 10, 10, 10),
+(1810017, 20, 20, 20, 20, 20),
+(1810021, 10, 10, 10, 10, 15),
+(1810022, 20, 20, 20, 20, 20),
+(1810027, 15, 20, 20, 20, 20),
+(1810051, 15, 15, 15, 15, 15),
+(1810060, 14, 14, 14, 14, 14);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_marks2`
+--
+
+CREATE TABLE `student_marks2` (
+  `Roll` int(11) NOT NULL,
+  `Electrical_Machines` int(11) NOT NULL,
+  `Data_Structure_&_Algorithms` int(11) NOT NULL,
+  `Digital_Techniques` int(11) NOT NULL,
+  `Mathematics` int(11) NOT NULL,
+  `Chemistry` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_marks2`
+--
+
+INSERT INTO `student_marks2` (`Roll`, `Electrical_Machines`, `Data_Structure_&_Algorithms`, `Digital_Techniques`, `Mathematics`, `Chemistry`) VALUES
+(1810021, 10, 12, 10, 10, 10),
+(1810022, 15, 15, 15, 15, 15),
+(1810024, 15, 15, 15, 15, 15),
+(1810025, 12, 12, 12, 12, 12);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_marks3`
+--
+
+CREATE TABLE `student_marks3` (
+  `Roll` int(11) NOT NULL,
+  `Electrical_Machines` int(11) NOT NULL,
+  `Data_Structure_&_Algorithms` int(11) NOT NULL,
+  `Digital_Techniques` int(11) NOT NULL,
+  `Mathematics` int(11) NOT NULL,
+  `Chemistry` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_marks3`
+--
+
+INSERT INTO `student_marks3` (`Roll`, `Electrical_Machines`, `Data_Structure_&_Algorithms`, `Digital_Techniques`, `Mathematics`, `Chemistry`) VALUES
+(1810021, 10, 10, 12, 10, 10),
+(1810022, 15, 15, 15, 15, 15);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_marks4`
+--
+
+CREATE TABLE `student_marks4` (
+  `Roll` int(11) NOT NULL,
+  `Electrical_Machines` int(11) NOT NULL,
+  `Data_Structure_&_Algorithms` int(11) NOT NULL,
+  `Digital_Techniques` int(11) NOT NULL,
+  `Mathematics` int(11) NOT NULL,
+  `Chemistry` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `student_marks4`
+--
+
+INSERT INTO `student_marks4` (`Roll`, `Electrical_Machines`, `Data_Structure_&_Algorithms`, `Digital_Techniques`, `Mathematics`, `Chemistry`) VALUES
+(1810021, 10, 10, 10, 15, 10),
+(1810022, 15, 15, 15, 15, 15);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teacher`
+--
+
+CREATE TABLE `teacher` (
+  `id` int(5) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `teachername` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `photo` varchar(50) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `datetime` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `teacher`
+--
+
+INSERT INTO `teacher` (`id`, `name`, `email`, `teachername`, `password`, `photo`, `status`, `datetime`) VALUES
+(1, 'Teacher 1', 'teacher@gmail.com', 'teacher1', '65cff42757952893f25858c3d497202b', '', 'active', '2020-11-11 14:53:33'),
+(2, 'Hasan', 'hasan@gmail.com', 'hasan', 'e807f1fcf82d132f9bb018ca6738a19f', '', 'active', '2020-11-24 12:53:57');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -85,11 +235,50 @@ INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`, `photo`, `st
 --
 
 --
+-- Indexes for table `student`
+--
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `studentname` (`studentname`),
+  ADD UNIQUE KEY `Roll` (`Roll`);
+
+--
 -- Indexes for table `student_info`
 --
 ALTER TABLE `student_info`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `roll` (`roll`);
+
+--
+-- Indexes for table `student_marks1`
+--
+ALTER TABLE `student_marks1`
+  ADD PRIMARY KEY (`Roll`);
+
+--
+-- Indexes for table `student_marks2`
+--
+ALTER TABLE `student_marks2`
+  ADD PRIMARY KEY (`Roll`);
+
+--
+-- Indexes for table `student_marks3`
+--
+ALTER TABLE `student_marks3`
+  ADD PRIMARY KEY (`Roll`);
+
+--
+-- Indexes for table `student_marks4`
+--
+ALTER TABLE `student_marks4`
+  ADD PRIMARY KEY (`Roll`);
+
+--
+-- Indexes for table `teacher`
+--
+ALTER TABLE `teacher`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `teachername` (`teachername`);
 
 --
 -- Indexes for table `users`
@@ -103,10 +292,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `student`
+--
+ALTER TABLE `student`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `student_info`
 --
 ALTER TABLE `student_info`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `teacher`
+--
+ALTER TABLE `teacher`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
