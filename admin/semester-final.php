@@ -1,114 +1,53 @@
+<?php
+session_start();
+require_once './dbcon.php';
+if(!isset($_SESSION['user_login'])){
+     header('location: login.php');
+}
+
+
+?>
+
+
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semester Final</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-          
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-					<link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
-					<link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
-                    <link rel="stylesheet" href="../css/style.css">
-					
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
-                    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
-					<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
-					<script type="text/javascript" src="../js/dataTables.bootstrap4.min.js"></script>
-					<script type="text/javascript" src="../js/script.js"></script>
-
-
+  <title>Semester Final Grades</title>
 </head>
 <body>
-
 <header style="width:100%; height:100px; background:#3CA9E8;">
-</header>
+   </header>
+
+   <br> <br>
+
+   <h1 class="text-center" style="margin-right:14px">Semester Final Grades</h1>
    
-     <br> <br>
+   <br> <br>
+   
+   <div class="row">
+  <div class="col-sm-4 offset-4">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title offset-4" style="margin-left:135px;">CGPA</h2> 
+        <br>
+        <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+        <a href="semesterinsert.php" style="width:100px;" class="btn btn-primary offset-4">Insert</a> <br> <br>
+        <a href="semesterdisplay.php" style="width:100px;" class="btn btn-primary offset-4">Display</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <u><h1 style="text-align: center;">Semester Final Grades:</h1></u>
 
-    <br> <br>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Roll No.</th>
-      <th scope="col">Electrical Machines</th>
-      <th scope="col">Data Structure & Algorithms</th>
-      <th scope="col">Digital Techniques</th>
-      <th scope="col">Mathematics</th>
-      <th scope="col">Chemistry</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1810008</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-    <tr>
-      <th scope="row">1810009</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-    <tr>
-      <th scope="row">1810014</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-    <tr>
-      <th scope="row">1810020</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-    <tr>
-      <th scope="row">1810021</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-    <tr>
-      <th scope="row">1810022</th>
-      <td>3.50</td>
-      <td>3.50</td>
-      <td>3.50</td>
-      <td>3.50</td>
-      <td>3.50</td>
-    </tr>
-    <tr>
-      <th scope="row">1810040</th>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-      <td>3.00</td>
-    </tr>
-  </tbody>
-</table>
-
-<br> <br> <br> <br> <br>
-
-<footer style="width:100%; height:100px; background:#3CA9E8; text-align:center;
-   bottom:0;">
+  
+   <footer style="width:100%; height:100px; background:#3CA9E8; text-align:center; margin-top:49px; position:absolute; bottom:0;">
         <h6 style="padding-top:25px; color: white;">Copyright &COPY; 2020 Student Information & Management System. All Rights Are Reserved.</h6> 
      </footer>
-    
 </body>
 </html>
