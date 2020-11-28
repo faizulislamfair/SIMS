@@ -31,7 +31,7 @@ if(!isset($_SESSION['user_login'])){
 					<script type="text/javascript" src="../js/dataTables.bootstrap4.min.js"></script>
 					<script type="text/javascript" src="../js/script.js"></script>
 
-  <title>Class Test Archive</title>
+  <title>Semester Final</title>
 </head>
 <body>
 <header style="width:100%; height:100px; background:#3CA9E8;">
