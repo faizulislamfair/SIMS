@@ -84,7 +84,6 @@ if(isset($_POST['semesterupdate'])){
       </td>
       <td>
       <input type="text" name="CGPA" placeholder="CGPA" id="name" class="form-control" required="" value="<?= $db_row['CGPA'] ?>" >
-
       </td>
     </tr>
   </tbody>

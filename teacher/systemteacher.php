@@ -213,6 +213,10 @@ foreach($rows as $row){
       $results = mysqli_query($link, "SELECT * FROM `student_marks1` WHERE `Roll` = '$Roll'");
 
       if(mysqli_num_rows($results) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-1</h3>
+        </div>';
         $row = mysqli_fetch_assoc($results);
         ?>
 
@@ -375,6 +379,10 @@ foreach($rows as $row){
       $results = mysqli_query($link, "SELECT * FROM `student_marks2` WHERE `Roll` = '$Roll'");
 
       if(mysqli_num_rows($results) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-2</h3>
+        </div>';
         $row = mysqli_fetch_assoc($results);
         ?>
 
@@ -538,6 +546,10 @@ foreach($rows as $row){
       $results = mysqli_query($link, "SELECT * FROM `student_marks3` WHERE `Roll` = '$Roll'");
 
       if(mysqli_num_rows($results) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-3</h3>
+        </div>';
         $row = mysqli_fetch_assoc($results);
         ?>
 
@@ -707,6 +719,10 @@ foreach($rows as $row){
       $results = mysqli_query($link, "SELECT * FROM `student_marks4` WHERE `Roll` = '$Roll'");
 
       if(mysqli_num_rows($results) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-4</h3>
+        </div>';
         $row = mysqli_fetch_assoc($results);
         ?>
 

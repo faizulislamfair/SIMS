@@ -213,6 +213,12 @@ foreach($rows as $row){
       $result_ct = mysqli_query($link, "SELECT * FROM `student_marks1` WHERE `Roll` = ".$_SESSION['student_login']);
 
       if(mysqli_num_rows($result_ct) == 1){
+
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-1</h3>
+        </div>';
+
         $row = mysqli_fetch_assoc($result_ct);
         ?>
 
@@ -390,6 +396,10 @@ foreach($rows as $row){
       $result_ct = mysqli_query($link, "SELECT * FROM `student_marks2` WHERE `Roll` = ".$_SESSION['student_login']);
 
       if(mysqli_num_rows($result_ct) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-2</h3>
+        </div>';
         $row = mysqli_fetch_assoc($result_ct);
         ?>
 
@@ -564,6 +574,10 @@ foreach($rows as $row){
       $result_ct = mysqli_query($link, "SELECT * FROM `student_marks3` WHERE `Roll` = ".$_SESSION['student_login']);
 
       if(mysqli_num_rows($result_ct) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-3</h3>
+        </div>';
         $row = mysqli_fetch_assoc($result_ct);
         ?>
 
@@ -740,6 +754,10 @@ foreach($rows as $row){
       $result_ct = mysqli_query($link, "SELECT * FROM `student_marks4` WHERE `Roll` = ".$_SESSION['student_login']);
 
       if(mysqli_num_rows($result_ct) == 1){
+        echo '<br> <br>
+        <div>
+          <h3 style="text-align:center;">CT-4</h3>
+        </div>';
         $row = mysqli_fetch_assoc($result_ct);
         ?>
 
