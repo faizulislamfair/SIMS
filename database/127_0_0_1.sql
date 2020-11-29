@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 25, 2020 at 01:48 PM
+-- Generation Time: Nov 29, 2020 at 01:39 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -22,6 +22,88 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `student_project` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `student_project`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `attendance`
+--
+
+CREATE TABLE `attendance` (
+  `Roll` int(11) NOT NULL,
+  `Course` text NOT NULL,
+  `d_one` int(11) NOT NULL,
+  `d_two` int(11) NOT NULL,
+  `d_three` int(11) NOT NULL,
+  `d_four` int(11) NOT NULL,
+  `d_five` int(11) NOT NULL,
+  `d_six` int(11) NOT NULL,
+  `d_seven` int(11) NOT NULL,
+  `d_eight` int(11) NOT NULL,
+  `d_nine` int(11) NOT NULL,
+  `d_ten` int(11) NOT NULL,
+  `d_eleven` int(11) NOT NULL,
+  `d_twelve` int(11) NOT NULL,
+  `d_thirteen` int(11) NOT NULL,
+  `d_fourteen` int(11) NOT NULL,
+  `d_fifteen` int(11) NOT NULL,
+  `d_sixteen` int(11) NOT NULL,
+  `d_seventeen` int(11) NOT NULL,
+  `d_eighteen` int(11) NOT NULL,
+  `d_nineteen` int(11) NOT NULL,
+  `d_twenty` int(11) NOT NULL,
+  `d_twentyone` int(11) NOT NULL,
+  `d_twentytwo` int(11) NOT NULL,
+  `d_twentythree` int(11) NOT NULL,
+  `d_twentyfour` int(11) NOT NULL,
+  `d_twentyfive` int(11) NOT NULL,
+  `d_twentysix` int(11) NOT NULL,
+  `d_twentyseven` int(11) NOT NULL,
+  `d_twentyeight` int(11) NOT NULL,
+  `d_twentynine` int(11) NOT NULL,
+  `d_thirty` int(11) NOT NULL,
+  `d_thirtyone` int(11) NOT NULL,
+  `d_thirtytwo` int(11) NOT NULL,
+  `d_thirtythree` int(11) NOT NULL,
+  `d_thirtyfour` int(11) NOT NULL,
+  `d_thirtyfive` int(11) NOT NULL,
+  `d_thirtysix` int(11) NOT NULL,
+  `d_thirtyseven` int(11) NOT NULL,
+  `d_thirtyeight` int(11) NOT NULL,
+  `d_thirtynine` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `attendance`
+--
+
+INSERT INTO `attendance` (`Roll`, `Course`, `d_one`, `d_two`, `d_three`, `d_four`, `d_five`, `d_six`, `d_seven`, `d_eight`, `d_nine`, `d_ten`, `d_eleven`, `d_twelve`, `d_thirteen`, `d_fourteen`, `d_fifteen`, `d_sixteen`, `d_seventeen`, `d_eighteen`, `d_nineteen`, `d_twenty`, `d_twentyone`, `d_twentytwo`, `d_twentythree`, `d_twentyfour`, `d_twentyfive`, `d_twentysix`, `d_twentyseven`, `d_twentyeight`, `d_twentynine`, `d_thirty`, `d_thirtyone`, `d_thirtytwo`, `d_thirtythree`, `d_thirtyfour`, `d_thirtyfive`, `d_thirtysix`, `d_thirtyseven`, `d_thirtyeight`, `d_thirtynine`) VALUES
+(1810020, 'ECE-2103', 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(1810021, 'ECE-2103', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+(1810022, 'ECE-2103', 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(1810040, 'ECE-2103', 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(1810041, 'ECE-2103', 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(1810060, 'ECE-2103', 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `semester`
+--
+
+CREATE TABLE `semester` (
+  `Roll` int(11) NOT NULL,
+  `CGPA` decimal(11,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `semester`
+--
+
+INSERT INTO `semester` (`Roll`, `CGPA`) VALUES
+(1810020, '3.35'),
+(1810021, '3.35'),
+(1810022, '3.55');
 
 -- --------------------------------------------------------
 
@@ -131,7 +213,8 @@ INSERT INTO `student_marks2` (`Roll`, `Electrical_Machines`, `Data_Structure_&_A
 (1810021, 10, 12, 10, 10, 10),
 (1810022, 15, 15, 15, 15, 15),
 (1810024, 15, 15, 15, 15, 15),
-(1810025, 12, 12, 12, 12, 12);
+(1810025, 12, 12, 12, 12, 12),
+(1810060, 12, 12, 12, 12, 12);
 
 -- --------------------------------------------------------
 
@@ -233,6 +316,18 @@ INSERT INTO `users` (`id`, `name`, `email`, `username`, `password`, `photo`, `st
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `attendance`
+--
+ALTER TABLE `attendance`
+  ADD PRIMARY KEY (`Roll`);
+
+--
+-- Indexes for table `semester`
+--
+ALTER TABLE `semester`
+  ADD PRIMARY KEY (`Roll`);
 
 --
 -- Indexes for table `student`
