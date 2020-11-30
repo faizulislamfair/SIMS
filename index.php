@@ -4,11 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="stylex.css">
 
   <title>Login Panels</title>
 </head>
 <body>
+
+
+<!--    preloader start-->
+    <!-- <div class="preloader">
+    </div> -->
+<!--    preloader End-->
+
+
 <header style="width:100%; height:100px; background:#3CA9E8;">
    </header>
 
@@ -22,6 +32,7 @@
   <div class="col-sm-3">
     <div class="card">
       <div class="card-body">
+         
         <h4 class="card-title offset-2">Teacher Login</h4>
         <h4 class="card-title offset-4">Panel</h4> 
         <br>
