@@ -13,12 +13,6 @@
 <body>
 
 
-<!--    preloader start-->
-    <!-- <div class="preloader">
-    </div> -->
-<!--    preloader End-->
-
-
 <header style="width:100%; height:100px; background:#3CA9E8;">
    </header>
 
